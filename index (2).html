@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F0E6">
+  <meta name="description" content="William Shephard in Richmond, Virginia. IT support, manual software QA, AI evaluation, and practical technology projects.">
+  <meta property="og:title" content="William Shephard — Projects, Website QA and AI Evaluation">
+  <meta property="og:description" content="Practical websites, honest project case studies and human-reviewed QA work samples from William Shephard in Richmond, VA.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+    <title>William Shephard — IT, QA & AI Projects</title>
+  <style>
+    :root { color-scheme: dark; --bg:#091421; --panel:#112337; --panel2:#152b41; --ink:#f4f7fb; --muted:#b7c5d4; --line:#36506a; --teal:#7be7ca; --gold:#f4d69a; --radius:20px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse 70% 40% at 95% -10%,#1e5264 0%,transparent 70%),var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit} a:hover{color:var(--teal)} :focus-visible{outline:3px solid var(--gold);outline-offset:4px} .wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+    header{border-bottom:1px solid rgba(183,197,212,.22)} .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap} .wordmark{font-size:18px;font-weight:800;letter-spacing:-.5px;text-decoration:none} .wordmark span{color:var(--teal)} nav{display:flex;gap:22px;flex-wrap:wrap} nav a{font-size:14px;font-weight:600;text-decoration:none;color:var(--muted)}
+    .hero{padding:85px 0 78px;display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center} .eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;font-weight:800;color:var(--teal);margin:0 0 18px} h1{font-size:clamp(40px,6.5vw,75px);line-height:1.07;letter-spacing:-.06em;margin:0 0 23px;max-width:800px} .hero h1 em{font-style:normal;color:var(--teal)} .lead{font-size:clamp(17px,2vw,21px);max-width:690px;color:var(--muted);margin:0 0 28px} .actions{display:flex;gap:13px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 20px;border-radius:11px;background:var(--teal);color:#071721;font-weight:800;text-decoration:none;border:1px solid var(--teal)}.button:hover{background:#b4fae7;color:#071721}.button.secondary{background:transparent;color:var(--ink);border-color:#68839a}.button.secondary:hover{border-color:var(--teal);color:var(--teal)}
+    .identity{background:linear-gradient(150deg,#19415a,#122b3d);border:1px solid #44718a;border-radius:26px;padding:28px;box-shadow:0 25px 70px #02081250;position:relative}.identity:before{content:"WS";display:grid;place-items:center;width:68px;height:68px;border:2px solid var(--teal);border-radius:16px;color:var(--teal);font-size:25px;font-weight:900;letter-spacing:-2px;margin-bottom:32px}.identity strong{display:block;font-size:19px;line-height:1.3}.identity p{font-size:14px;color:var(--muted);margin:9px 0 22px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:12px;color:#dcf8f1;border:1px solid #507c79;background:#173a42;border-radius:30px;padding:5px 10px}
+    section{padding:51px 0;border-top:1px solid rgba(183,197,212,.16)} .sectionhead{display:flex;justify-content:space-between;align-items:end;gap:25px;flex-wrap:wrap;margin-bottom:28px}.sectionhead h2{font-size:clamp(28px,3vw,39px);letter-spacing:-.035em;line-height:1.2;margin:0}.sectionhead p{color:var(--muted);margin:0;max-width:520px} .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.card .number{font:800 12px/1 monospace;color:var(--teal);letter-spacing:.12em}.card h3{font-size:22px;letter-spacing:-.025em;line-height:1.3;margin:12px 0 8px}.card p{color:var(--muted);margin:0 0 15px}.card ul{margin:0;padding-left:20px;color:#e4ecf3}.card li{margin:6px 0}.status{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--gold)} .label{color:var(--teal);font-weight:700;font-size:14px}
+    .feature{border-color:#3e998b;background:linear-gradient(145deg,#163841,#102938)} .feature .status{color:var(--teal)} .wide{grid-column:1/-1}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.pill{background:var(--panel2);border:1px solid var(--line);border-radius:15px;padding:19px}.pill h3{font-size:16px;margin:0 0 5px}.pill p{font-size:14px;margin:0;color:var(--muted)} .fineprint{color:var(--muted);font-size:13px}.about{display:grid;grid-template-columns:1.35fr .65fr;gap:25px}.about p{color:var(--muted);margin:0 0 14px}.sidebar{padding:23px;border-radius:var(--radius);border:1px solid var(--line);background:var(--panel)}.sidebar h3{margin:0 0 14px}.sidebar dl{margin:0}.sidebar dt{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:800}.sidebar dd{margin:4px 0 18px}.sidebar dd:last-child{margin-bottom:0}.projectthumb{height:110px;display:flex;align-items:end;border-radius:13px;padding:17px;margin-bottom:18px;background:linear-gradient(135deg,#173e4a,#286b60);color:#edfff8;font-size:20px;font-weight:800;letter-spacing:-.035em}.projectthumb.blue{background:linear-gradient(135deg,#1b3656,#225b82)}.projectthumb.gold{background:linear-gradient(135deg,#51422d,#807149)}.projectthumb.violet{background:linear-gradient(135deg,#3e3059,#7761a4)}.projectthumb.slate{background:linear-gradient(135deg,#213446,#4b6577)}.projectlink{display:inline-block;margin-top:18px;font-weight:800;text-decoration:underline;text-decoration-color:#4f9f92;text-underline-offset:5px}.servicebadge{display:inline-block;border:1px solid #587f82;border-radius:8px;padding:4px 8px;font-size:12px;color:var(--teal)}
+    .contact{background:linear-gradient(110deg,#174759,#123044);border:1px solid #4d8c91;border-radius:25px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.contact h2{font-size:30px;margin:0 0 7px}.contact p{margin:0;color:#d9e7f1;max-width:600px} footer{color:var(--muted);font-size:13px;padding:28px 0 42px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:780px){.hero,.about{grid-template-columns:1fr;gap:30px}.hero{padding:64px 0 48px}.grid,.grid3{grid-template-columns:1fr}.wide{grid-column:auto}.identity{max-width:520px}.contact{padding:28px}}
+    .case-detail{border:1px solid var(--line);border-radius:15px;background:var(--panel);margin:12px 0;overflow:hidden}.case-detail summary{cursor:pointer;padding:19px 21px;font-size:18px;font-weight:800;list-style-position:inside}.case-detail[open] summary{border-bottom:1px solid var(--line);color:var(--teal)}.case-body{padding:20px 25px;color:var(--muted)}.case-body h3{color:var(--ink);font-size:17px;margin:18px 0 7px}.case-body p{margin:8px 0}.case-body li{margin:5px 0}.case-stage{display:block;color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.case-body .projectlink{color:var(--teal)}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+    /* Emerald & Cream: warm, readable palette for hiring managers and clients. */
+    :root {
+      color-scheme:light;
+      --bg:#F5F0E6;
+      --panel:#FFFDFA;
+      --panel2:#EAF2E9;
+      --ink:#193A2E;
+      --muted:#496457;
+      --line:#C8D7C9;
+      --teal:#145C4A;
+      --gold:#A14D30;
+    }
+    body {
+      background:
+        radial-gradient(ellipse 67% 35% at 92% -8%,#D8EADD 0%,transparent 73%),
+        linear-gradient(180deg,#FCF9F0 0%,var(--bg) 38%,#F8F4EA 100%);
+    }
+    header {
+      background:rgba(255,253,248,.82);
+      border-bottom:1px solid #D3DED1;
+    }
+    section { border-top-color:#D4DFD4; }
+    :focus-visible { outline-color:#B15E3B; }
+    .button {
+      background:var(--teal);
+      color:#FFFFFF;
+      border-color:var(--teal);
+      box-shadow:0 5px 14px rgba(20,92,74,.12);
+    }
+    .button:hover { background:#0D4537;color:#FFFFFF;border-color:#0D4537; }
+    .button.secondary {
+      background:#FFFCF5;
+      color:var(--teal);
+      border-color:#93B6A0;
+      box-shadow:none;
+    }
+    .button.secondary:hover { background:#E5F1E7;color:#0B4837;border-color:var(--teal); }
+    .identity {
+      background:linear-gradient(155deg,#21745C 0%,#15523F 61%,#123C32 100%);
+      border-color:#73A891;
+      color:#FFFBF1;
+      box-shadow:0 22px 55px rgba(19,73,52,.18);
+    }
+    .identity:before {
+      color:#FFF8E8;
+      border-color:#B3DAC0;
+      background:rgba(255,255,255,.07);
+    }
+    .identity p { color:#DEECE1; }
+    .tag { color:#F5FFF6;border-color:#78AA92;background:#276B55; }
+    .card,.pill,.sidebar,.case-detail { box-shadow:0 8px 24px rgba(25,72,46,.04); }
+    .card ul { color:var(--muted); }
+    .feature {
+      border-color:#9FC9AE;
+      background:linear-gradient(145deg,#E6F2E6,#FCFDF7);
+    }
+    .projectthumb {
+      background:linear-gradient(135deg,#164C3F,#2E8564);
+      color:#F9FFF7;
+    }
+    .projectthumb.blue { background:linear-gradient(135deg,#174D4E,#347F82); }
+    .projectthumb.gold { background:linear-gradient(135deg,#814829,#C17E4A); }
+    .projectthumb.violet { background:linear-gradient(135deg,#415B3D,#748B54); }
+    .projectthumb.slate { background:linear-gradient(135deg,#315550,#62887A); }
+    .projectlink { text-decoration-color:#5B9A79; }
+    .servicebadge {
+      color:var(--teal);
+      border-color:#9FC5AB;
+      background:#F0F7ED;
+    }
+    .contact {
+      background:linear-gradient(115deg,#1E6E54,#164836);
+      border-color:#589B79;
+      color:#FFFFFF;
+      box-shadow:0 16px 35px rgba(19,79,55,.13);
+    }
+    .contact h2 { color:#FFFFFF; }
+    .contact p { color:#E4F0E6; }
+    .contact .button {
+      color:#174D3A;
+      background:#FFF6E4;
+      border-color:#FFF6E4;
+    }
+    .contact .button:hover { background:#FFFFFF;color:#174D3A;border-color:#FFFFFF; }
+    .contact .button.secondary {
+      color:#FFFFFF;
+      background:transparent;
+      border-color:#ABCEB8;
+    }
+    .contact .button.secondary:hover { background:rgba(255,255,255,.13);color:#FFFFFF; }
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><a class="wordmark" href="#top">William <span>Shephard</span></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Projects</a><a href="#qa">QA sample</a><a href="#background">Background</a><a href="#contact">Contact</a></nav></div></header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Richmond, Virginia · Open to remote opportunities</p>
+        <h1>I help make technology <em>easier to use and improve.</em></h1>
+        <p class="lead">I'm William Shephard. I work on practical web projects, customer workflows, manual quality checks and AI-assisted development. I'm building my career in IT and QA while offering small, clearly scoped website and documentation help.</p>
+        <div class="actions"><a class="button" href="#work">See the projects</a><a class="button secondary" href="#services">Work with me</a><a class="button secondary" href="mailto:contact@originventureshq.com?subject=Career%20opportunity%20for%20William%20Shephard">Hiring inquiry</a></div>
+      </div>
+      <aside class="identity" aria-label="Professional focus">
+        <strong>William Shephard</strong><p>Web project coordination · Manual QA · IT support · AI evaluation</p>
+        <div class="tags"><span class="tag">HTML foundations</span><span class="tag">Test planning</span><span class="tag">Issue tracking</span><span class="tag">Customer support</span><span class="tag">AI-assisted development</span></div>
+      </aside>
+    </div>
+
+    <section id="services"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">For businesses and clients</p><h2>Small, practical help with your website</h2></div><p>Start with a clearly defined task. Every project needs an agreed scope and permission to review the site.</p></div>
+      <div class="grid3"><div class="pill"><span class="servicebadge">01 / QA</span><h3>Website usability check</h3><p>Review navigation, links, mobile layout and inquiry paths. Get a written list of what works and what needs attention.</p></div><div class="pill"><span class="servicebadge">02 / WEB</span><h3>Static page improvements</h3><p>Help with straightforward HTML content, page structure, button links and clear calls to action. Complex backends are quoted separately.</p></div><div class="pill"><span class="servicebadge">03 / WORKFLOWS</span><h3>Process documentation</h3><p>Turn a rough service process into readable steps, user flows and human-reviewed AI workflow requirements.</p></div></div>
+      <div class="actions" style="margin-top:22px"><a class="button" href="#services">Review service options</a><a class="button secondary" href="mailto:contact@originventureshq.com?subject=Website%20or%20QA%20project%20for%20William%20Shephard">Ask about a project</a></div>
+    </div></section>
+
+    <section id="qa"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">Hands-on work</p><h2>Quality assurance samples</h2></div><p>My approach is simple: define what should happen, test step by step, and record what actually happened.</p></div>
+      <article class="card feature"><span class="status">Working practice tools</span><h3>Manual QA, Website Checks + AI Review</h3><p>One browser tool organizes test cases and results. A separate Node.js checker catches broken local links and missing page metadata. A new AI response scorecard helps practice evaluating clarity, relevance, instruction-following and factual support. These are learning tools with stated limits.</p><div class="actions"><a class="button" href="#case-qa-notebook">Read QA notebook details</a><a class="button secondary" href="#case-ai-review">Read AI review details</a><a class="button secondary" href="#case-qa-notebook">QA case study</a></div><p class="fineprint" style="margin-top:15px">All manual tests and ratings begin unreviewed. People must verify the results.</p></article>
+    </div></section>
+
+    <section id="work"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">Separate project case studies</p><h2>Real sites, demos and work in progress</h2></div><p>Each project has its own page. Public websites are linked where available; private systems remain private. These are affiliated and internal projects, not invented outside client contracts.</p></div>
+      <div class="grid">
+        <article class="card"><div class="projectthumb">Turnover Services</div><span class="number">SERVICE WEBSITE</span><h3>Turnover Services</h3><p class="status">Public website</p><p>Service presentation, customer inquiry flow and scope-aware estimate language for a Richmond property-services operation.</p><a class="projectlink" href="#case-turnover-services">See project details →</a></article>
+        <article class="card"><div class="projectthumb blue">L &amp; J Logistics</div><span class="number">SERVICE WEBSITE</span><h3>L &amp; J Logistics</h3><p class="status">Public website</p><p>Business deliveries, warehouse pickups and service boundaries presented for potential customers and partners.</p><a class="projectlink" href="#case-lj-logistics">See project details →</a></article>
+        <article class="card"><div class="projectthumb gold">Tortoise Life</div><span class="number">BRAND CONCEPT</span><h3>Tortoise Life</h3><p class="status">Public coming-soon site</p><p>Apparel brand direction, product concepts, and a clear early-stage landing page.</p><a class="projectlink" href="#case-tortoise-life">See project details →</a></article>
+        <article class="card"><div class="projectthumb violet">Sophia Productions</div><span class="number">CREATIVE WEBSITE</span><h3>Sophia Productions</h3><p class="status">Public studio site</p><p>Photography, video and storytelling services organized as a creative portfolio.</p><a class="projectlink" href="#case-sophia-productions">See project details →</a></article>
+        <article class="card"><div class="projectthumb slate">Origin OS</div><span class="number">PRIVATE PLATFORM</span><h3>Origin OS</h3><p class="status">Internal stabilization work</p><p>Requirements, user flows, release checks and operational-system planning. Private source is not published.</p><a class="projectlink" href="#case-origin-os">See project details →</a></article>
+        <article class="card"><div class="projectthumb">ARIES</div><span class="number">DEFENSIVE REVIEW</span><h3>ARIES</h3><p class="status">Public research prototype</p><p>Evidence-first defensive review principles, risk documentation and human approval gates.</p><a class="projectlink" href="#case-aries">See project details →</a></article>
+        <article class="card"><div class="projectthumb violet">Human OS</div><span class="number">CREATIVE SOFTWARE</span><h3>Human OS</h3><p class="status">Public concept interface</p><p>A web-first personal systems and interactive world concept with staged development.</p><a class="projectlink" href="#case-human-os">See project details →</a></article>
+        <article class="card"><div class="projectthumb blue">Jerald</div><span class="number">AI ASSISTANT PLANNING</span><h3>Jerald</h3><p class="status">Preview and proposed features</p><p>Lead intake, FAQ and business workflow design with clear human-review boundaries.</p><a class="projectlink" href="#case-jerald">See project details →</a></article>
+        <article class="card"><div class="projectthumb slate">AI Quality Review</div><span class="number">PRACTICE CODE SAMPLE</span><h3>AI Response Scorecard</h3><p class="status">Interactive learning project</p><p>A small browser tool for structured human review and JSON report export, with no external AI calls.</p><a class="projectlink" href="#case-ai-review">See project details →</a></article>
+      </div>
+    </div></section>
+
+<section id="case-library"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">Individual project details</p><h2>Explore the case studies</h2></div><p>Tap a project to read about its stage, the work it shows and what is still being developed.</p></div><details id="case-origin-os" class="case-detail"><summary>Origin OS <span class="case-stage">Private project — stabilization work</span></summary><div class="case-body"><p>Origin OS brings business tasks, approvals, projects and authorized records into a coordinated operating environment for Origin Ventures Inc.</p><h3>What this shows</h3><ul><li>Planning a modular business system</li><li>Thinking through user roles, permissions, tasks and approvals</li><li>Using feature notes and release checks to guide improvements</li></ul><h3>My role</h3><p>I help organize feature requests, user-flow reviews, testing questions and project priorities as part of the Origin Ventures team.</p><p class="fineprint"><strong>Scope:</strong> The internal repository is private. The corporate site is public, but it is not a public demo of the protected Origin OS dashboard. Production acceptance and security gates are not represented as complete.</p><p><a class="projectlink" href="https://originventureshq.com" target="_blank" rel="noopener noreferrer">See the corporate website →</a></p></div></details>
+<details id="case-aries" class="case-detail"><summary>ARIES Defensive Review <span class="case-stage">Public research prototype</span></summary><div class="case-body"><p>ARIES is a defensive-only project exploring how to turn authorized evidence and published threat intelligence into clear, human-reviewed findings.</p><h3>What this shows</h3><ul><li>Evidence and source-quality thinking</li><li>Defensive review checklists and issue documentation</li><li>Human approval gates and cautious statements of confidence</li></ul><h3>My role</h3><p>I help define the defensive use cases, review priorities, and documentation standards while learning quality and security-review concepts.</p><p class="fineprint"><strong>Scope:</strong> This is research and advisory work. It is not an autonomous security scanner, penetration-testing service, or certified security audit.</p><p><a class="projectlink" href="https://aries-defense-research.vercel.app" target="_blank" rel="noopener noreferrer">View the research prototype →</a></p></div></details>
+<details id="case-human-os" class="case-detail"><summary>Human OS <span class="case-stage">Public concept interface</span></summary><div class="case-body"><p>Human OS starts as a web-first concept for personal organization and creative experiences, with plans for interactive worlds and future digital assets.</p><h3>What this shows</h3><ul><li>Staging a large product idea into smaller web modules</li><li>Thinking about user experiences and design flows</li><li>Documenting which components are concepts versus working screens</li></ul><h3>My role</h3><p>I shape the direction, user stories and experience goals as part of a collaborative, AI-assisted development process.</p><p class="fineprint"><strong>Scope:</strong> The public site is a concept and web interface. A complete persistent 3D universe, production identity platform or digital asset economy is not being claimed.</p><p><a class="projectlink" href="https://human-os-world-five.vercel.app" target="_blank" rel="noopener noreferrer">Explore the concept site →</a></p></div></details>
+<details id="case-jerald" class="case-detail"><summary>Jerald Business Assistant <span class="case-stage">Planned and staged features</span></summary><div class="case-body"><p>Jerald is an AI-assisted workflow concept for helping businesses answer common questions, collect inquiries and prepare internal drafts with human review.</p><h3>What this shows</h3><ul><li>Breaking assistant ideas into specific user tasks</li><li>Designing lead intake with approval points</li><li>Separating demos and planned integrations from production operations</li></ul><h3>My role</h3><p>I identify the use cases and help define the practical questions the assistant needs to answer for customers and business staff.</p><p class="fineprint"><strong>Scope:</strong> The existence of corporate-site widget and preview code does not prove that full autonomous scheduling, CRM writes, email campaigns or client data integrations are live.</p><p><a class="projectlink" href="https://originventureshq.com" target="_blank" rel="noopener noreferrer">See Origin Ventures →</a></p></div></details>
+<details id="case-turnover-services" class="case-detail"><summary>Turnover Services Website <span class="case-stage">Public service website</span></summary><div class="case-body"><p>A local business website describing property turnovers, cleaning, junk removal and how customers can request an assessment-based quote.</p><h3>What this shows</h3><ul><li>Making service categories easy to find</li><li>Setting realistic expectations for estimates</li><li>Organizing a clear route from services to customer inquiry</li></ul><h3>My role</h3><p>I help coordinate the service offering, customer journey and website updates within the Origin Ventures ecosystem.</p><p class="fineprint"><strong>Scope:</strong> The website is public; it is not proof of specific job volume, licensing for regulated work, insurance, or instant quote automation.</p><p><a class="projectlink" href="https://turnover-services.vercel.app" target="_blank" rel="noopener noreferrer">View the service website →</a></p></div></details>
+<details id="case-lj-logistics" class="case-detail"><summary>L &amp; J Logistics Website <span class="case-stage">Public service website</span></summary><div class="case-body"><p>A website presenting local business deliveries, warehouse pickups and route support for an emerging Richmond-area logistics service.</p><h3>What this shows</h3><ul><li>Clear service scope and vehicle-capacity boundaries</li><li>Business-facing service copy</li><li>Customer inquiry and partner information paths</li></ul><h3>My role</h3><p>I work on the business direction and service workflow with L &amp; J Logistics collaborators.</p><p class="fineprint"><strong>Scope:</strong> This project does not claim tractor-trailer capacity, government contracts, or services outside approved equipment and operating scope.</p><p><a class="projectlink" href="https://lj-logistics-site.vercel.app" target="_blank" rel="noopener noreferrer">View the logistics website →</a></p></div></details>
+<details id="case-tortoise-life" class="case-detail"><summary>Tortoise Life <span class="case-stage">Public coming-soon site</span></summary><div class="case-body"><p>A golf and lifestyle apparel brand built around controlled progress, with a public concept collection and brand story.</p><h3>What this shows</h3><ul><li>Brand message and visual direction</li><li>Product concept presentation</li><li>Clear coming-soon and availability language</li></ul><h3>My role</h3><p>I help shape the brand concept, positioning and web presentation within Origin Ventures.</p><p class="fineprint"><strong>Scope:</strong> Concept products on the site are not represented as available for purchase unless their status is separately verified.</p><p><a class="projectlink" href="https://tortoise-life.vercel.app" target="_blank" rel="noopener noreferrer">View the coming-soon site →</a></p></div></details>
+<details id="case-sophia-productions" class="case-detail"><summary>Sophia Productions <span class="case-stage">Public studio website</span></summary><div class="case-body"><p>A creative-studio website organizing photography, video, publication and original storytelling directions in one place.</p><h3>What this shows</h3><ul><li>Presenting multiple creative services clearly</li><li>Navigation between portfolio sections</li><li>Content structure for future publications and releases</li></ul><h3>My role</h3><p>I help organize the studio&#39;s creative and digital direction and its relationship to Origin Ventures project work.</p><p class="fineprint"><strong>Scope:</strong> The site presents capabilities and plans. Individual client productions, releases and sales are not claimed without published evidence.</p><p><a class="projectlink" href="https://sophia-productions-studio.vercel.app" target="_blank" rel="noopener noreferrer">View the creative studio →</a></p></div></details>
+<details id="case-ai-review" class="case-detail"><summary>AI Response Quality Scorecard <span class="case-stage">Interactive practice project</span></summary><div class="case-body"><p>A simple browser tool for reviewing public or fictional AI responses using four explicit human evaluation criteria and an exportable JSON report.</p><h3>What this shows</h3><ul><li>Assessing instruction following and relevance</li><li>Separating factual support from unsupported confidence</li><li>Writing reviewer observations and exporting a record</li></ul><h3>My role</h3><p>I use this AI-assisted learning project to practice structured evaluation and clear explanation of review judgments.</p><p class="fineprint"><strong>Scope:</strong> It does not call an AI model, automatically verify claims, or certify model safety. All judgments are human-entered and no confidential data should be pasted into it.</p><p class="fineprint">The interactive practice file will be published in the full website release.</p></div></details>
+<details id="case-qa-notebook" class="case-detail"><summary>Manual QA Test Notebook <span class="case-stage">Interactive practice project</span></summary><div class="case-body"><p>A local-browser test notebook that provides six test cases for a personal website, with result notes and JSON export.</p><h3>What this shows</h3><ul><li>Writing steps and expected results</li><li>Recording Pass, Fail, Blocked or Not run honestly</li><li>Exporting a reproducible test report</li></ul><h3>My role</h3><p>I use this example to build and demonstrate my manual testing, review and documentation skills. It was developed with AI assistance as a practical learning artifact.</p><p class="fineprint"><strong>Scope:</strong> The notebook cannot automatically verify the tests. Every status begins Not run; a user must execute and record the tests themselves.</p><p class="fineprint">The interactive practice file will be published in the full website release.</p></div></details></div></section>
+    <section id="skills"><div class="wrap"><div class="sectionhead"><div><p class="eyebrow">How I contribute</p><h2>Practical strengths</h2></div></div>
+      <div class="grid3"><div class="pill"><h3>Support and problem solving</h3><p>Clear communication, troubleshooting, training, documentation, and follow-through.</p></div><div class="pill"><h3>Quality assurance</h3><p>Manual test planning, expected results, issue notes, and risk-based review practice.</p></div><div class="pill"><h3>Learning and building</h3><p>Foundational HTML, AI-assisted development tools, project workflows, and GitHub collaboration.</p></div></div>
+    </div></section>
+
+    <section id="background"><div class="wrap about"><div><p class="eyebrow">Background</p><h2>From service work to software projects.</h2><p>I learned HTML and coding basics in high school and later earned a bachelor's degree through ITT Technical Institute. Along the way, I worked in busy service settings where I had to solve problems, communicate clearly, and help teams keep things moving.</p><p>Now I bring that experience into software. I use AI tools as part of my learning and development process, but I don't claim that a project idea is finished code or that a sample test is a professional QA job. I'm focused on getting the work right and improving with each project.</p></div>
+      <aside class="sidebar"><h3>At a glance</h3><dl><dt>Education</dt><dd>ITT Technical Institute — bachelor's degree</dd><dt>Additional studies</dt><dd>Regent University — psychology studies</dd><dt>Early coding</dt><dd>HTML and coding coursework in high school</dd><dt>Location</dt><dd>Richmond, Virginia · Remote US roles</dd></dl></aside></div></section>
+
+    <section id="contact"><div class="wrap"><div class="contact"><div><h2>Have a website or workflow question?</h2><p>For business projects or hiring inquiries, contact me through the public Origin Ventures inbox. My personal résumé and contact details are provided directly in job applications.</p></div><a class="button" href="mailto:contact@originventureshq.com?subject=Project%20inquiry%20for%20William%20Shephard">Request a conversation</a></div></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 William Shephard. Built to show real work and what I'm learning. Single-file launch edition.</span><span>Project descriptions distinguish practice, planning, and active work.</span></footer>
+<script>function openTarget(){const id=location.hash.slice(1);const element=id?document.getElementById(id):null;if(element&&element.tagName==='DETAILS')element.open=true}window.addEventListener('hashchange',openTarget);openTarget();</script>
+</body>
+</html>
